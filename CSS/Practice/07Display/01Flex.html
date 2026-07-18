@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <!-- Internal CSS  -->
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        div[class*="child"]{
+            width: 200px;
+            height: 200px;
+        }
+        .child-1{
+            background-color: lightcoral;
+            order: 2;
+            /*flex-grow: 2; */
+            flex-shrink: 1;
+        }
+        .child-2{
+            background-color: lightseagreen;
+            order: 1;
+            /* flex-grow: 1; */
+            /*flex-shrink: 2; */
+            align-self: center;
+        }
+        .child-3{
+            background-color: lightgreen;
+            align-self: flex-start;
+            
+        }
+        .parent{
+            display: flex;
+            height: 500px;
+            /*justify-content: right;*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */  
+            /* align-items: center; */
+            /* align-content: center; */
+            /* gap: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">Child 1</div>
+        <div class="child-2">Child 2</div>
+        <div class="child-3">Child 3</div>
+    </div>
+</body>
+</html>
+
+
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->

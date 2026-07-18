@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+
+
+    <style>
+        *{
+            background-color: peachpuff;
+            color: brown;
+            font-family: Arial, Helvetica;
+                    }
+        .logo{
+            background-color: black;
+        }
+
+        .display{
+            background-color:plum;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <table width="100%" height="315px" border="1" cellpadding="10" cellspacing="0">
+        <tr width="100px" height="100px">
+            <td class=logo colspan="2" width="25%"><img src="D:\ASDC\FSD\HTML\logo1.png" width=300 height=100></img></td>
+            <td width="15%">Home</td>
+            <td width="15%"><a href="D:\ASDC\FSD\HTML\about.html" target="display">About</a></td>
+            <td width="15%"><a href="D:\ASDC\FSD\HTML\ShowT.html" target="index">Task</a></td>
+            <td width="15%"><a href="D:\ASDC\FSD\HTML\ShowP.html" target="index">Practice</a></td>
+            <td width="15%"><a href="D:\ASDC\FSD\HTML\Contact.html" target="display">Contact</a></td>
+        </tr>
+        <tr>
+            <td colspan="2" width="25%">
+                <iframe width="100%" height="480px" name="index" title="Iframe Example"></iframe>
+
+            </td>
+            <td class=display colspan="5" width="75%">
+                <iframe width="100%" height="480px" name="display" title="Iframe Example"></iframe>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

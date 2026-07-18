@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Css Selctor</title>
+    <!-- Inline CSS -->
+    <style>
+        *{
+            border: 1px solid black;
+        }
+        h1,h2{
+            color: rgb(16, 67, 83);
+        }
+        .card{
+            background-color:greenyellow;
+        }
+        #title{
+            background-color: rgb(199, 45, 31);
+        }
+        input[type="email"]{
+            border: dashed;
+        }
+        div p{
+            color: chocolate;
+            font-size: 20px;
+        }
+        .card > p:first-of-type{
+            color:rgb(167, 14, 209);
+        }
+        button:hover{
+            background-color: cyan;
+        }
+        input[type="text"]:focus{
+            color: goldenrod;
+        }
+       h2::before{
+            content: "★";
+        }
+        button::after{
+            content: "✔";
+        }
+        p::first-letter{
+           font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">This is h1</h1>
+    <div class="card">
+        <h2>This is h2 in div</h2>
+        <h2>This is h2 in div</h2>
+        <p>This is the paragraph of one of the main topic</p>
+         <p>This is the paragraph of one of the main topic. Also this is paragraph 2(too)</p>
+          <p>This is the paragraph of one of the main topic. Nice you are trying to do something which is not fare.</p>
+          <button>Submit</button>
+          <button>Cancel</button>
+    </div>
+    
+      <div class="card">
+        <h2>This is h2 in div</h2>
+        <h2>This is h2 in div</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, sit?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam perferendis vel commodi at ab inventore nostrum possimus veniam ipsum!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur illum rem sapiente natus libero amet laudantium in quos, possimus ex obcaecati atque tempore quam fugiat. Magni perferendis doloremque quis?
+          </p>
+          <button>Submit</button>
+          <button>Cancel</button>
+    </div>
+<br>
+    <input type="text" placeholder="Enter the Text"><br><br>
+    <input type="email" placeholder="Enter your email"><br><br>
+    <input type="password" placeholder="password">
+
+<br><br>
+
+<a href="http://Google.com" target="_blank">Google</a>
+
+<br><br>
+
+<a href="">Home</a>
+
+</body>
+</html>
