@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+background: url(./images/bg1.png)center center/cover;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.f-dir-col {
+    flex-direction: column;
+}
+
+li {
+    padding: 20px 30px;
+    list-style: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Lato";
+}
+.text1{
+    font-family: "Grand Hotel";
+    font-size: 200px;
+    font-weight: 500;
+    color:  #ffffff;
+    align-items: center;
+    text-align: center;
+
+}
+.para1{
+    color: #ffffff;
+    font-family: "Lato";
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+.button-1{
+    display: flex;
+    justify-content: center;
+}
+.button-2{
+border-radius: 32px;
+background-color: #ffffff;
+height: 50px;
+width: 200px;
+font-size: 20px;
+text-transform: uppercase;
+color: #e8565e;
+font-weight: 400;
+font-family: "Lato";
+text-align: center;;
+margin-right: 50px;
+border: 1px solid #eb4d55;
+}
+#sec-1{
+    background: url(./images/Background.png)center center/cover;
+}
+h1{
+    font-family: "Grand Hotel";
+    font-size: 90px;
+    font-weight: 400;
+    color: #e8565e;
+    text-align: center;
+}
+.para2{
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+font-weight: 400;
+font-family: "Lato";
+}
+.image1{
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    color: #e8565e;
+    font-family: "Grand Hotel";
+    font-weight: 400;
+    font-size: 60px;
+}
+.para3{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    color: #333333;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+#sec-2{
+    background: url(./images/RedNoodle.png)center center/cover;
+}
+h2{
+     font-family: "Grand Hotel";
+    font-size: 90px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+.para4{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+font-weight: 400;
+font-family: "Lato";
+}
+#sec-3{
+    background-color: #eee6cc;
+}
+.dish{
+    display: flex;
+    justify-content:center;
+    gap: 200px;
+}
+.pasta{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Menu{
+    position: relative;
+    top: 15px;
+}
+h3{
+    font-family: "Grand Hotel";
+    color: #eb4d55;
+    font-size: 35px;
+    font-weight: 400;
+}
+.para5{
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+#sec-4{
+background-color: #faf5e4;
+}
+.side{
+    display: flex;
+    justify-content: center;
+}
+.side1{
+    position: relative;
+    top: 350px;
+}
+h4{
+    font-family: "Grand Hotel";
+    font-size: 70px;
+    font-weight: 400;
+    color: #e8565e;
+    text-align: center;
+    position: relative;
+    right: 85px;
+}
+.half{
+    position: relative;
+    right: 175px;
+}
+.para6{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+}
+.button-3{
+    border-radius: 32px;
+background-color:#eb4d55;
+height: 50px;
+width: 200px;
+font-size: 20px;
+text-transform: uppercase;
+color:#ffffff;
+font-weight: 400;
+font-family: "Lato";
+text-align: center;;
+margin-right: 50px;
+border: 1px solid #eb4d55;
+}
+#sec-5{
+   /* background-color: #eee6cc; */
+   
+background-color: #eee6cc;
+}
+.box{
+    height: 330px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #faf5e4;
+    position: relative;
+    left: 50px;
+}
+.PI{
+    position: relative;
+    left: 120px;
+}
+.para7{
+     font-family: "Lato";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+}
+.button-4{
+    border-radius: 32px;
+background-color:#eb4d55;
+height: 30px;
+width: 100px;
+font-size: 20px;
+text-transform: uppercase;
+color:#ffffff;
+font-weight: 400;
+font-family: "Lato";
+text-align: center;;
+margin-right: 50px;
+border: 1px solid #eb4d55;
+position: relative;
+left: 90px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    right: 50px;
+}
+h5{
+    
+    font-family: "Grand Hotel";
+    font-size: 40px;
+    font-weight: 400;
+    color: #e8565e;
+    text-align: center;
+    
+
+}
+#sec-6{
+    background-color: #e0e0e0;
+}
+.Chef{
+    position: relative;
+    left: 650px;
+
+}
+.h4{
+    position: relative;
+    left: 5px;
+    font-size: 50px;
+    color: #eb4d55;
+    
+}
+.para8{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    color: #333333;
+}
+#sec-7{
+    position: relative;
+    top: -150px;
+}
+#sec-8{
+    background-color: #eee6cc;
+    position: relative;
+    top: -155px;
+}
+.button-5{
+     border-radius: 32px;
+background-color:#eb4d55;
+height: 40px;
+width: 100px;
+font-size: 15px;
+text-transform: uppercase;
+color:#ffffff;
+font-weight: 400;
+font-family: "Lato";
+text-align: center;;
+margin-right: 50px;
+border: 1px solid #eb4d55;
+position: relative;
+right: 150px;
+}
+input{
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    height: 40px;
+    width: 580px;
+    position: relative;
+    right:120px;
+}
+.h1{
+    font-size: 110px;
+}
+.sub{
+    position: relative;
+    left: 500px;
+}
+#sec-9{
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 160px;
+    gap: 80px;
+    height: 400px;
+    overflow: auto;
+}
+h6{
+font-family: "Grand Hotel";
+    font-size: 40px;
+    font-weight: 400;
+    color:#ffffff;
+}
+h7{
+    font-family: "Grand Hotel";
+    font-size: 30px;
+    font-weight: 400;
+    color:#ffffff;
+}
+.para9{
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 400;
+    color:#ffffff;
+}
+.para10{
+    font-family: "nunito";
+    font-size: 15px;
+    font-weight: 400;
+    color:#ffffff;
+}

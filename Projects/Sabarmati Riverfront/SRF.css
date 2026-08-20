@@ -1,0 +1,569 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+    
+}
+.black{
+    display: flex;
+    position: relative;
+    top: 15PX;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color:whitesmoke;
+   height: 55px;
+}
+nav{
+    background-color: black;
+}
+.icon{
+    gap: 15px;
+}
+.white{
+    display: flex;
+    justify-content: space-evenly;
+    gap:290px;
+}    
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+    white-space: nowrap;
+position: relative;
+right: 40px;
+font-size: 17px;
+}
+.back{
+color: whitesmoke;
+    text-align: center; 
+    white-space:nowrap;
+    position: relative;
+    top: 390px;
+    left:-120px;    
+}
+.Tale{
+    font-size: 20px;
+}
+#sec-1{
+    background: url(Images/sabarmatiriverfront.jpg) center center/cover;
+    text-align: center;
+    width: 1800px;
+    height: 650px; 
+}
+h1{
+    font-size: 37px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h2{
+    position: relative;
+    right: 60px;
+}
+.A{
+    position: relative;
+    right: 50px;
+}
+.S{
+    position: relative;
+    left:0px;
+    right: 80px;
+    overflow: hidden;
+}
+.icon1{
+    display: none;
+}
+.Text{
+    margin-top: 15px;
+}
+.P2{
+    position: relative;
+    right: 130px;
+}
+.A{
+    position: relative;
+    right: 225px;
+}
+.H{
+    position: relative;
+    left: -60px;
+}
+.h{
+    border-bottom: 2px solid white;
+    color: whitesmoke;
+    
+}
+.map{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    right: 0px;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+.circle{
+    display: flex;
+    position: relative;
+    left: 155px;
+    gap: 70px;
+    align-items: center;
+    
+}
+.p{
+      color: whitesmoke;
+       font-weight: 500;
+       white-space: nowrap;
+    font-size: 17px;
+}
+.para1{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(134, 134, 134);
+}
+.para2{
+    font-size: 17px;
+    text-align: left;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: rgb(75, 74, 74);
+}
+.para3{
+     font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: rgb(75, 74, 74);
+
+}
+button{
+    background-color: rgb(93, 186, 243);
+    border: 2px solid  rgb(92, 189, 250);
+    color: whitesmoke;
+    width: 150px; height: 35px;
+    position: relative;
+    left: 80px; 
+    font-size: 18px;
+}
+button:hover{
+    background-color: green;
+    border: 2px solid green;
+}
+
+.button{
+     background-color: rgb(93, 186, 243);
+    border: 2px solid  rgb(92, 189, 250);
+    color: whitesmoke;
+    position: relative;
+    left: 0px;
+    width: 150px; height: 35px; 
+    font-size: 18px;
+}
+.img1{
+    position: relative; top: 20px;
+}
+.img2{
+    position: relative; top:40px;
+}
+.Attraction{
+    position: relative; right: 5px;
+}
+.peace{
+    position: relative; left: 590px;
+}
+
+#sec-2{
+    display: flex;
+    gap: 40px;
+    background-color:rgb(250, 246, 246);
+    justify-content: center;
+    gap: 150px;
+   
+}
+#sec-3{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    left: 80px;
+    gap: 40px;
+}
+.card{
+    justify-content: center;
+    gap: 25px;
+}
+.button1{
+    width: 270px;
+    position: relative;
+    left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.button1:hover{
+    background-color:  rgb(93, 186, 243);
+    border: 2px solid  rgb(92, 189, 250);
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.para4{
+    color: rgb(92, 189, 250);
+    font-size: 15px;
+    text-align: left;
+}
+.grey{
+    background-color: rgb(88, 88, 88);
+    text-align: center;
+    height: 55px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 300;
+}
+.Foot1{
+    display: flex;
+    gap: 100px;
+    background: url(Images/footer-bg1.jpg)center center/cover;
+}
+.Foot2{
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: left;
+    gap: 80px;
+    white-space: nowrap;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    left: 60px;
+}
+.Change{
+    position: relative;
+    left: 80px;
+}
+.blue{
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    background-color: rgb(93, 186, 243);
+    gap: 90px;
+    color:rgb(20, 20, 20);
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+}
+.G{
+    display: flex;
+    gap: 10px;
+}
+.green{
+    position: relative;
+    right: 40px;
+    top: 20px;
+    height: 25px;
+    width: 30px;
+    align-items: center;
+    background-color: green;
+}
+.arrow{
+    height: 40px;
+    width: 40px;
+    position: sticky;
+     position: relative; 
+     top: 4135px; 
+/* top: 2000px; */
+/* translate: Y 2000px; */
+    left: -100px;
+    z-index: 100;
+    border-radius: 7px;
+    background-color:#fff;
+}
+.arow{
+    position: relative;
+    left: 10px;
+}
+.Icon{
+    position: relative;
+    top: 8px;
+}
+.check{
+    position: relative;
+            top: -46px;
+            left: 463px; 
+            opacity: 0;
+}
+.but1{
+    position: relative;
+    left: 607px;
+}
+.button2{
+    position: relative;
+    left: 30px;
+}
+.ul{
+    display: none;
+}
+
+ @media(max-width:576px){
+        .black{
+            width: 100%;
+            height: 230px;
+            flex-direction: column;
+            font-size: 19px;
+            position: relative;
+            top: -5px;
+            text-align: center;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        ul{
+            display: none;
+        }
+        .logo{
+            position: relative;
+            left: -180px;
+            width: 180px;
+            height: 30px;
+            bottom: 10px;
+        }
+        #sec-1{
+            background: url(./Images/sabarmatiriverfront.jpg) center center/cover;
+            width: 576px;
+            height: 450px;}
+        .Tale{
+        font-size:22px;
+        text-align: center;
+        position: relative;
+        bottom: 120px;
+        right: -70px; 
+        }
+        h1{
+        font-size: 37px;
+        position: relative;
+        bottom: 120px;
+        right: -70px; 
+        }
+        .circle{
+            flex-direction: column;
+            overflow: hidden;
+            align-items: center;
+            position: relative;
+            left:37px;
+        }
+        button{
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+            position: relative;
+            left: -25px;
+        }
+        .para1{
+            position: relative;
+            left: -25px;
+        }
+        #sec-2{
+            flex-direction: column;
+            
+        }
+        #sec-3{
+            flex-direction: column;
+        }
+        .H2{
+        position: relative;
+        right: 165px;
+        font-weight: 500;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .H3{
+        position: relative;
+        right: 25px;
+        font-weight: 500;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .P2{
+             position: relative;
+        right: 85px;
+        font-weight: 500;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .para2{
+           /* white-space: nowrap;*/
+            font-size: 17px;
+            position: relative;
+            left: 5px;
+            overflow: hidden;
+        }
+        .button{
+            position: relative;
+            left: 5px;
+        }
+        .img{
+            width: 460px;
+            height: 250px;
+            position: relative;
+            left: 10px;
+        }
+        .img1{
+            position: relative;
+            top: -140px;
+        }
+        .img2{
+            position: relative;
+            top: -140px;
+        }
+        .UP{
+            position: relative; bottom: 55px;
+        }
+        .cards{
+            flex-direction: column;
+            position: relative;
+            left: 10px; 
+        }
+        .button1{
+            position: relative;
+            left: -1px;
+        }
+        .button2{
+            position: relative;
+            left: 1px;
+        }
+        .but1{
+            overflow: hidden;
+        }
+        .Attraction{
+            position: relative;
+            left: 15px;
+            top: -5px;
+        }
+        
+        .peace{
+            position: relative;
+            left: -5px;
+            left: 9px;
+        }
+        .Size{
+            width: 460px;
+        }
+        .card{
+            position: relative;
+            right: 200px;
+        }
+        .slide{
+            flex-direction: column;
+        }
+        .L{
+            position: relative;
+            left: 10px;
+        }
+        .para4{
+            position: relative;
+            left: 10px;
+        }
+        h4{
+            position: relative;
+            left: 10px;
+        }
+        .Foot1{
+            flex-direction: column;
+        }
+        .Foot2{
+            flex-direction: column;
+        }
+        .map{
+            width: 460px;
+            height: 180px;
+            position: relative;
+            left: 5px;
+            margin-bottom: 5px;
+        }
+        .p{
+            position: relative;
+            left: 20px;
+        }
+        .h{
+            position: relative;
+            left: -150px;
+        }
+        .H{
+            position: relative;
+            left: -110px;
+        }
+        .Foot2{
+            gap: 0px;
+        }
+        .blue{
+            flex-direction: column;
+            height: 140px;
+            gap: 0px;
+            font-size: 17px;
+        }
+        .Text{
+            position: relative;
+            left: 10px;
+            gap: 0px;
+        }
+        .G{
+            position: relative;
+            left: 10px;
+            top: -0px;
+            gap: 10px;
+        }
+        .grey{
+            height: 70px;
+        }
+        .icon1{
+            position: relative;
+            top: -30px;
+            display: block;
+            left: 460px;
+        }
+        .arrow{
+    height: 40px;
+    width: 40px;
+    position: sticky;
+    position: relative;
+    top: 11140px;
+    left: 430px;
+    z-index: 100;
+    border-radius: 7px;
+    background-color:#fff;
+}
+     .Change{
+        position: relative;
+        left: 0px;
+     }
+body:has(input.check:checked) .main{
+        display: none;
+
+    }
+
+    body:has(input.check:checked) .ul{
+        display: block ;
+    }
+
+    .ul{
+    display: none;
+}
+
+
+    }
+
