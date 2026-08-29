@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task-5</h1>
+    <script>
+        // Ques-28
+        let age=68;
+        var Weekend=true;
+       if (Weekend==true) {
+        if (age<12) {
+           console.log("Ticket price=>",150,"Rs"); 
+        } else if(age>=12 && age<=59) {
+            console.log("Ticket price=>",250,"Rs");
+        }
+        else {
+            console.log("Ticket price=>",170,"Rs");
+        }
+       } else {
+        if (age<12) {
+           console.log("Ticket price=>",100,"Rs"); 
+        } else if(age>=12 && age<=59) {
+            console.log("Ticket price=>",200,"Rs");
+        }
+        else {
+            console.log("Ticket price=>",120,"Rs");
+        }
+       }
+
+       //Ques-29
+        let Amount=15000;
+        let member=true;
+        if (member==true) {
+           if (Amount>=10000) {
+            console.log(Amount);
+            console.log(Amount*0.25);
+            console.log(Amount-Amount*0.25);
+           } else if(Amount<=9999 && Amount>=5000) {
+            console.log(Amount);
+            console.log(Amount*0.15);
+            console.log(Amount-Amount*0.15)
+           } else{
+            console.log(Amount);
+            
+           }
+        } else {
+             if (Amount>=10000) {
+            console.log(Amount);
+            console.log(Amount*0.20);
+            console.log(Amount-Amount*0.20);
+           } else if(Amount<=9999 && Amount>=5000) {
+            console.log(Amount);
+            console.log(Amount*0.10);
+            console.log(Amount-Amount*0.10)
+           } else{
+            console.log(Amount);
+           } 
+          
+        }
+
+        // Ques-30
+        let EmployeeSalary=20000;
+        let YearsOfExperience=0;
+        let PerformanceRating=8;
+
+        if (YearsOfExperience>=5 && PerformanceRating>=8) {
+            console.log(EmployeeSalary);
+            console.log("20% bonus");
+            console.log(EmployeeSalary*0.20);
+            console.log(EmployeeSalary+EmployeeSalary*0.20);
+        } else if(YearsOfExperience>=3 && PerformanceRating>=7) {
+            console.log(EmployeeSalary);
+            console.log("15% bonus");
+            console.log(EmployeeSalary*0.15);
+            console.log(EmployeeSalary+EmployeeSalary*0.15);
+        }else if(YearsOfExperience>=1 && PerformanceRating>=6) {
+            console.log(EmployeeSalary);
+            console.log("10% bonus");
+            console.log(EmployeeSalary*0.10);
+            console.log(EmployeeSalary+EmployeeSalary*0.10);
+        }
+        else{
+            console.log(EmployeeSalary);
+            console.log("0% bonus");
+            console.log(0.0);
+            console.log(EmployeeSalary);
+        }
+    </script>
+</body>
+</html>

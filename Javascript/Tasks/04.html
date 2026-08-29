@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task-4</h1>
+    <script>
+        // Ques-7
+        let productPrice = 750;
+        let quantity = 4;
+        console.log("Total price=>",productPrice*quantity);
+        console.log("Price=>",productPrice*quantity+productPrice*quantity*0.18);
+        
+        // Ques-8
+        let celsius=90;
+        let Fahrenheit = (celsius * 9/5) + 32;
+        console.log(Fahrenheit);
+        
+        // Ques-9
+        let BasicPay=30000;
+        let HRA=0.2*BasicPay;
+        let DA=0.1*BasicPay;
+        let Total=BasicPay+HRA+DA;
+        console.log(HRA);
+        console.log(DA);
+        console.log(Total);
+
+        // Ques-10
+        let Laptop = 55000
+         let Mouse = 800
+        let Keyboard = 1500
+        let total=Laptop+Mouse+Keyboard;
+        console.log(total);
+
+        //Ques-11
+        let Pcost=8000;
+        let Price= Pcost-Pcost*0.15;
+        console.log(Price);
+         
+        // Ques-12
+        English = 78
+       let Mathematics = 85
+       let Science = 72
+       let Computer = 90
+       let Hindi = 81
+       let Marks=English+Mathematics+Science+Computer+Hindi;
+       let Percentage=(Marks/500)*100
+       console.log(Percentage);
+
+       //Ques-13
+       let points = 100;  
+       console.log(points);
+       points+=20;
+       console.log(points);
+       points+=15;
+       console.log(points);
+       points-=10
+       console.log(points);
+       points-=25;
+       console.log(points);
+
+       // ues-14
+       let balance = 5000;
+       console.log(balance);
+       balance+=1500;
+       console.log(balance);
+       balance-=800;
+       console.log(balance);
+       balance*=2
+       console.log(balance);
+       balance/=4;
+       console.log(balance);
+
+       //Ques-15
+       let TotalStudents = 47;
+       let StudentsPerGroup = 5;
+       console.log(parseInt(TotalStudents/StudentsPerGroup));
+       console.log(parseInt(TotalStudents%StudentsPerGroup));
+       
+        // Ques-16
+       let Age=15;
+       if (Age>=18) {
+        console.log("Eligible: You are 18 or older.");
+       }else{
+        console.log("Not Eligible: You are under 18.");
+       }
+
+       //Ques-17
+       let agE=18;
+       let HasPassedDrivingTest=true;
+       if(agE>=18 && HasPassedDrivingTest==true){
+        console.log("Eligible: for license");
+       }    else{
+        console.log("not eligible: for license");
+       }
+
+       //Ques-18
+       let correctUsername="Samina-kezhar"
+       let correctPassword="S2818"
+
+       let enteredUsername ="Samina-kezhar"
+       let enteredPassword ="S2818"
+
+       console.log(correctPassword==enteredPassword && correctUsername==enteredUsername,"Login sucessfull");
+       
+        //Ques-19   
+       let num1=28;
+       let num2=18;
+      if (num1>num2) {
+        console.log("First number is greatest");
+        
+      }else if(num1<num2){
+        console.log("First number is smaller");
+
+      } 
+      else {
+        console.log("both are equal");
+        
+      }
+       
+       //Ques-20
+       let age=18;
+       let HasIDcard=true;
+       let Hasregistration=true;        
+       console.log(age>=18 && HasIDcard==true && Hasregistration==true);
+               
+       //Ques-21
+       var num=-12;
+       if (num>0) {
+        console.log("Positive number");
+       }
+       else if(num<0){
+        console.log("negative number");
+        
+       }else{
+        console.log("number=0");
+       }
+       
+        // Ques-22
+        let num3=28;
+        if (num3%2==0) {
+            console.log("Even number");
+            
+        } else {
+            console.log("Odd number");
+            
+        }
+
+        // Ques-23
+        let Perc=97.13;
+        if (Perc>35) {
+            console.log("Pass");
+            
+        } else {
+            console.log("fail");
+            
+        }
+
+        // Ques-24
+        let Per=13;
+        if (Per>=90&&Per<=100) {
+            console.log("A");
+            
+        }
+        else if(Per<=89&&Per>=75){
+            console.log("B");
+            
+        }
+        else if(Per<=74&&Per>=60){
+            console.log("C");
+            
+        }
+        else if(Per<=59&&Per>=35){
+            console.log("D");
+            
+        }
+         else {
+            console.log("f");
+            
+        }
+
+        //Ques-25 
+        let A=28;
+        let B=18;
+        let C=37;
+        if (A>B && A>C) {
+            console.log("A is largest");
+            
+        } else if(B>A && B>C) {
+            console.log("B is largest");
+        }else{
+            console.log("C is largest");
+            
+        }
+
+        //Ques-26 
+        let a=28;
+        let b=18;
+        let c=37;
+        if (a<b && a<c) {
+            console.log("A is Smallest");
+            
+        } else if(b<a && b<c) {
+            console.log("B is Smallest");
+        }else{
+            console.log("C is Smallest");
+            
+        }
+
+        // Ques-27
+        let units=25;
+        if (units>=0 && units<=100) {
+            console.log("₹5/unit");
+            console.log("Total bill=>",units*5,);
+            
+            
+        } else if(units>=101 && units<=200) {
+            console.log("₹7/unit");
+            console.log("Total bill=>",units*7,);
+            
+            
+        }else{
+            console.log("₹10/unit");
+            console.log("Total bill=>",units*10,);
+        }
+        
+    </script>
+</body>
+</html>
