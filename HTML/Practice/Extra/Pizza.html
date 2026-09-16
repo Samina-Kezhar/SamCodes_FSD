@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table border="5" cellspacing="10" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center">Pizza Shop</td>
+            </tr>
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Enter pizza name" required maxlength="15"></td>
+            </tr>
+
+            <tr>
+                <td>Toppings:</td>
+                <td>
+                    <input type="radio" value="Supreme" name="Toppings">
+                    <label>Supreme</label>
+                    <input type="radio" value="Vegetarian" name="Toppings">
+                    <label>Vegetarian</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Extras:</td>
+                <td>
+                    <input type="checkbox" name="Extras" value="cheese">
+                    <label>Cheese</label>
+                    <input type="checkbox" name="Extras" value="Others">
+                    <label>Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Size:</td>
+                <td>
+                    <select>
+                        <option value="small">small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Comment:</td><br>
+                <td>
+                    <textarea rows="3" cols="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button>Order</button>
+                </td>
+                <td align="center"><button type="reset">Reset</button></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
