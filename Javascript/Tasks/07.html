@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ques-11
+                function greetUser(name="Guest"){
+            document.write("Hello,",name)
+        }
+        greetUser("tassu")
+
+        // Ques-12
+        function displayUser(name, country = "India"){
+            document.write("<br>",name,"is from ",country)
+        }
+        displayUser("samina","Europe")
+        displayUser("samina")
+
+        // Ques-13
+        function calculatePrice(price, discount = 10){
+            document.write("<br>",price-price*discount/100)
+        }
+        calculatePrice(1000,20)
+        calculatePrice(2000)
+
+        // Ques-14
+        function calculatePower(number, power = 2) {
+            document.write("<br>",number**power)
+        }
+        calculatePower(5)
+        calculatePower(5,3)
+
+        // Ques-15
+        function employeeInfo(name, department = "IT", salary = 30000){
+            document.write("<br>",name," is in ",department," department and has salary ",salary)
+        }
+        employeeInfo("Samina")
+        employeeInfo("samina","CE")
+        employeeInfo("samina","EC ",150000)
+
+        // Ques-16
+        function calculateArea(length, width){
+            area=length*width
+            return area;
+        }
+        document.write("<br>",calculateArea(2,3),"sq")
+
+
+        // Ques-17
+        function calculateSimpleInterest(principal, rate, time){
+            SI = (principal*rate*time) / 100
+            return SI
+        }
+         document.write("<br>",calculateSimpleInterest(1000,5,2))
+
+
+        //  Ques-18
+        function convertCelsiusToFahrenheit(celsius){
+            fahrenheit = (celsius* 9/5) + 32
+            return fahrenheit
+        }
+        convertCelsiusToFahrenheit(32)
+        document.write("<br>",convertCelsiusToFahrenheit(32))
+
+
+        // Ques-19
+        function Eligibility(age){
+            if (age>=18) {
+       return "Eligible: You are 18 or older"
+       }else{
+        return "Not Eligible: You are under 18"
+       }
+        }
+        document.write("<br>",Eligibility(18))
+
+
+        // Ques-20
+        function calculator(a, b, operator){
+             
+            if(operator=="+"){
+                total=a+b
+             }else if(operator=="-"){
+                total=a-b
+             }else if(operator=="*"){
+                total=a*b        
+             }else if(operator=="/"){
+                total=a/b
+             }
+             return total}
+             document.write("<br>",calculator(2,3,"-"))
+
+</script>
+</body>
+</html>

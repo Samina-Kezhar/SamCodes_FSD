@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Ques-21
+        // function printNumbers(n){
+        //     for (let i= 1; i <= n; i++) {
+        //         document.write("<br>",i) 
+        //     }
+        // }
+        // printNumbers(5)
+
+
+
+        // // Ques-22
+        // function printEvenNumbers(n){
+        //     for (let i = 1; i <=n; i++) {
+        //        if (i%2==0) {
+        //         document.write("<br>",i)
+        //        } 
+        //     }
+        // }
+        // printEvenNumbers(20)
+
+        // Ques-23
+//         function sumNumbers(n){
+//             let sum=0
+//             for (let i = 0; i <= n; i++) {
+                
+//                 document.write("<br>")
+//                 sum+=i
+//             }
+//             document.write(sum)
+//         }
+
+//    sumNumbers(5)
+
+
+        //Ques-24    
+        // function multiplicationTable(n) {
+        //     for (let i =1; i <=10; i++) {
+        //         document.write("<br>",n,"x",i,"=",n*i)
+                
+        //     }
+        // }
+        // multiplicationTable(5)
+
+
+        
+        // //Ques-25
+        // function Numbers(n){
+        //     for (let i= n; i >= 1; i--) {
+        //         document.write("<br>",i) 
+        //     }
+        // }
+        // Numbers(5)
+
+
+        // Ques-26
+        // function printnumbers(n){
+        //     let i=1
+        //     do{
+        //      document.write("<br>",i)
+        //      i++
+        //     }
+        //     while (i<=n) 
+        // }
+        // printnumbers(11)
+
+        
+        // //Ques-27
+        // function sumEvenNumbers(n){
+        //     let i=1
+        //     let sum=0
+        //     do{
+        //         if (i%2==0) {
+        //             sum+=i
+        //         }
+        //         i++
+
+        //     }
+        //     while(i<=n)
+        //     document.write("<br>",sum)
+        // }
+        // sumEvenNumbers(10)
+
+        // // Ques-28
+        // function countDigits(number){
+        //     let i=0
+        //     while (number.length()) {
+        //         i++
+        //     }
+        //     document.write("<br>",i)
+        // }
+        // countDigits(2818)
+
+
+        // // Ques-29
+        // function calculateSalary(name, basicSalary, bonus = 5000){
+        //     TotalSalary = basicSalary + bonus
+        //     if (TotalSalary>=100000) {
+        //         document.write("<br>",name,"has salary ",TotalSalary,"High Salary")
+        //     }
+        //     else if(TotalSalary>=50000){
+        //        document.write("<br>",name,"has salary ",TotalSalary,"Medium Salary")
+        //     }
+        //     else{
+        //          document.write("<br>",name,"has salary ",TotalSalary,"Entry level")
+        //     }
+        // }
+        //    calculateSalary("samina",100000,20000)
+
+
+        // Ques-30
+        function analyzeSales(salesperson, monthlySales, target = 100000){
+            let perc=monthlySales/target * 100
+            if (perc>= 100){
+         console.log("Salesperson:",salesperson ,
+         "Monthly Sales:" ,monthlySales,
+         "Target:" ,100000,
+
+        "Target Achieved:", perc,
+        "Performance:", "Excellent");
+
+            }
+             else if (perc>= 80){
+                console.log("Salesperson:",salesperson ,
+            "Monthly Sales:" ,monthlySales,
+            "Target:" ,100000,
+
+            "Target Achieved:", perc,
+            "Performance:", "Good");
+            }
+           else if (perc>= 50){
+             console.log("Salesperson:",salesperson ,
+            "Monthly Sales:" ,monthlySales,
+            "Target:" ,100000,
+
+            "Target Achieved:", perc,
+            "Performance:", "Average");
+            }
+            else if (perc<50){
+            console.log("Salesperson:",salesperson ,
+            "Monthly Sales:" ,monthlySales,
+            "Target:" ,100000,
+
+            "Target Achieved:", perc,
+            "Performance:", "Needs Improvement");
+            }
+        }
+        analyzeSales("om",20000)
+
+</script>
+</body>
+</html>

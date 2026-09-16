@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <style>
+        .text-bg-coral{
+            background-color: lightcoral;
+        }
+       .text-bg-brown{
+        color: brown;
+       }
+       button{
+        background-color: lightcoral;
+       }
+       </style>
+</head>
+<body class="d-flex justify-content-center">
+    <div class="card " style="width: 18rem;">
+<div class="card-header text-bg-coral text-bg-brown">
+    <input type="text" id="input1" placeholder="Enter number 1">
+</div>
+<div class="card-header text-bg-coral">
+    <input type="text" id="input2" placeholder="Enter number 2">
+</div>
+<div class="card-item justify-content-center d-flex text-bg-brown">
+
+    
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="div()">/</button>
+    <button onclick="mul()">*</button>
+</div>
+    
+<div class="card-footer text-bg-brown ">
+    <h4 id="ans"></h4>
+</div>
+
+</div>
+
+    <script>
+        function add(){
+            let input1 = parseInt(document.getElementById("input1").value);
+            let input2 = parseInt(document.getElementById("input2").value);
+            ans.innerText =input1+input2;
+        }
+
+         function sub(){
+            let input1 = parseInt(document.getElementById("input1").value);
+            let input2 = parseInt(document.getElementById("input2").value);
+            ans.innerText =input1-input2;
+        }
+
+         function div(){
+            let input1 = parseFloat(document.getElementById("input1").value);
+            let input2 = parseFloat(document.getElementById("input2").value);
+            ans.innerText =input1/input2;
+        }
+
+         function mul(){
+            let input1 = parseInt(document.getElementById("input1").value);
+            let input2 = parseInt(document.getElementById("input2").value);
+            ans.innerText =input1*input2;
+        }
+    </script>
+</body>
+</html>

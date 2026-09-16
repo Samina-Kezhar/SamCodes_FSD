@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greetUser(){
+            document.write("Welcome to JavaScript Programming!")
+        }
+        greetUser()
+        
+
+        // Ques-2
+        
+        function greet(name){
+            document.write("</br> Hello"," ",name)
+        }
+        greet("jenil")
+        greet("Om")
+        greet("Mahi")
+
+        // Ques-3
+        function addNumbers(a, b){
+            document.write("</br>",a+b)
+        }
+        addNumbers(10, 20)
+
+
+
+        // Ques-4
+        function findSquare(number) {
+            document.write("</br>",number*number)
+        }
+        findSquare(6) 
+
+
+
+        // Ques-5
+        function calculateAge(birthYear){
+           currentyear=2026
+            document.write("</br>",currentyear-birthYear)
+        }
+        calculateAge(2008)
+
+
+        // Ques-6
+        function checkEvenOdd(number){
+            if(number%2==0){
+                document.write("<br>","Even")
+            }else{
+                document.write("<br>","Odd")
+            }
+        }
+        checkEvenOdd(17)
+
+
+        //Ques-7
+        function checkNumber(num){
+            if (num>0) {
+        document.write("<br>","Positive number");
+       }
+       else if(num<0){
+        document.write( "<br>","negative number");
+        
+       }else{
+        document.write("<br>","number=0");
+       }
+        } 
+         checkNumber(28)
+
+
+        //  Ques-8
+        function findLargest(A, B, C){
+             if (A>B && A>C) {
+            document.write("<br>", "A is largest");
+            
+        } else if(B>A && B>C) {
+            document.write("<br>","B is largest");
+        }else{
+            document.write("<br>","C is largest");
+            
+        }
+        }
+        findLargest(25,45,30)
+
+
+        // Ques-9
+        function checkResult(marks){
+            if (marks>=40) {
+                document.write("<br>","pass")
+            
+        }   else { 
+            document.write("<br>","fail")
+            
+        }
+        }
+        checkResult(35)
+
+
+        // Ques-10
+         function calculateGrade(Per){
+            if (Per>=90&&Per<=100) {
+            document.write("<br>","A");
+            
+        }
+        else if(Per<=89&&Per>=75){
+            document.write("<br>","B");
+            
+        }
+        else if(Per<=74&&Per>=60){
+            document.write("<br>","C");
+            
+        }
+        else if(Per<=59&&Per>=35){
+            document.write("<br>","D");
+            
+        }
+         else {
+            document.write("<br>","f");
+            
+        }
+         }
+         calculateGrade(98)
+    </script>
+</body>
+</html>
