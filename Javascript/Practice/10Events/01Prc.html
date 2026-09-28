@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #change{
+            height: 300px;
+            width: 300px;
+            font-family: Georgia, cursive,  serif;
+            color: lightcoral;
+            border: 5px double brown;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="change" onclick="circle()">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Omnis qui, earum quibusdam officia accusamus
+         quidem eveniet quis commodi libero nam suscipit nihil<br> dignissimos magni quas quasi reiciendis. Ipsam, iste nulla?</p>
+    </div>
+
+    <div id="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit, minima voluptate illo corporis inventore <br>
+        adipisci est architecto totam voluptatum sed, nihil eum commodi aliquam assumenda praesentium reiciendis non temporibus.</p>
+    </div>
+    <script>
+        let change =document.getElementById("change")
+        function circle(){
+            change.style.borderRadius="40px";
+            change.style.fontSize="10px";
+            change.style.color="maroon";
+            change.style.textAlign="center";
+            change.style.background="lightyellow";
+
+        }
+
+    </script>
+</body>
+</html>

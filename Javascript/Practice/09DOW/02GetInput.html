@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get InpData</title>
+
+
+    
+        <!-- Bootstrap CSS  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+</head>
+
+<body>
+    <input type="text" id="inp1" placeholder="Enter your Num1">
+    <input type="text" id="inp2" placeholder="Enter your Num2">
+
+
+    <button onclick="getInpData()">Submit</button>
+
+    <h2 id="res" class="border border-primary text-bg-dark"></h2>
+
+    <script>
+
+
+        let res = document.getElementById("res");
+        function getInpData() {
+            let inp1 = document.getElementById("inp1").value;
+            let inp2 = document.getElementById("inp2").value;
+            // alert(inp1);
+            // console.log(inp1);
+            // document.write(inp1);
+            res.innerText = inp1 + " " + inp2;
+
+        }
+    </script>
+</body>
+
+</html>
