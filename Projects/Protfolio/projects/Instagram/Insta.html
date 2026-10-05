@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Insta.css">
+    <style>
+        .eye{
+            position: absolute;
+            right: 15px;
+            top: 110px;
+            display: none;
+        }
+        .eye_slash{
+            position: absolute;
+             right: 15px;
+            top: 110px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/Instagram_icon.png.webp" height="80px" width="80px" class="logo">
+                    <div class="center">
+                        <h1>See everyday moments from your</h1>
+                        <p class="close">close friends.</p>
+                        <img src="images/login-image.webp" height="500px" width="500px" class="login-image">
+                    </div>
+                </div>
+                <div class="col login">
+                    <p class="p1">Log into Instagram</p><br>
+                    <input type="number email text" placeholder="Mobile number,username or email" class="text" onblur="Validation(this,'error1','Name')"><br>
+                    <span id="error1"></span><br>
+                    <i class="fa-regular fa-eye eye" id="eye" style="color: rgb(11, 10, 10);" onclick="Showpass()"></i>
+                    <i class="fa-regular fa-eye-slash eye_slash" id="eye_slash" style="color: rgb(11, 10, 10);" onclick="Showpass()"></i>
+                    <input type="password" placeholder="Password" id="Pass" onblur="Validation(this,'error2','Password')" oninput="Showeye(this)"><br>
+                    <span id="error2"></span><br>
+                    <button class="LoginB">Log in</button><br><br>
+                    <button class="Forgot">Forgot Password?</button><br><br><br><br>
+                    <button class="Facebook"><i class="fa-brands fa-facebook" style="color: rgb(4, 93, 162);"></i>Log in with Facebook</button><br><br>
+                    <button class="account">Create new account</button><br><br>
+                    <p class="meta"><i class="fa-brands fa-meta" style="color: rgb(10, 10, 11);"></i>Meta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+                <!-- <div><p  class="right"></p></div> -->
+<hr>
+        <section>
+            <div class="list1">
+                <ul>
+                    <li>Meta</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Jobs</li>
+                    <li>Help</li>
+                    <li>API</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Location</li>
+                    <li>Popular</li>
+                    <li>Instagram Lite</li>
+                    <li>Meta Ai</li>
+                    <li>Threads</li>
+                    <li>Contact Uploading & Non-Users</li>
+                    <li>Meta Verified</li>
+                </ul>
+            </div><br>
+            <div class="list2">
+                <ul>
+                    <li>
+                        English<i class="fa-solid fa-chevron-down" style="color: rgb(10, 10, 11);"></i>
+                    </li>
+                    <li>2026 Instagram from meta</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+
+           
+        // let eye=document.getElementById("eye")
+        // let eyeSlash=document.getElementsById("eye_slash")
+        let password=document.getElementById("Pass")
+
+
+        function Validation(detail, error, msg){
+            if (detail.value == "") {
+                document.getElementById(error).innerText = `Enter Your ${msg}`
+                document.getElementById(error).style.color = "red"
+            } else {
+                document.getElementById(error).innerText = ""
+            }
+        }
+
+        
+        function Showeye(password){
+            if (password.value.length >= 1) {
+               eye_slash.style.display = "block"
+                
+            } else {
+                eye_slash.style.display = "none"
+                
+            }
+
+        }
+      
+        function Showpass(){
+            console.log("print");
+            
+               if (password.type == "password") {
+                    password.type = "text"
+                    eye.style.display = "block"
+                    eye_slash.style.display = "none"
+                } else {
+                    password.type = "password"
+                    eye.style.display = "none"
+                    eye_slash.style.display = "block"
+                }
+            
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Carousel</title>
+
+    <style>
+        #carousel {
+            width: 500px;
+            height: 250px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            transition: 0.5s;
+        }
+
+        button {
+            padding: 10px 25px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="carousel">
+        Slide 1
+    </div>
+
+    <div style="text-align:center;">
+        <button onclick="previous()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+
+    <script>
+        let slides = [
+            { text: "Slide 1", color: "red" },
+            { text: "Slide 2", color: "blue" },
+            { text: "Slide 3", color: "green" },
+            { text: "Slide 4", color: "orange" }
+        ];
+
+        let currentSlide = 0;
+
+        function showSlide() {
+            document.getElementById("carousel").innerHTML =
+                slides[currentSlide].text;
+
+            document.getElementById("carousel").style.backgroundColor =
+                slides[currentSlide].color;
+        }
+
+        function next() {
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            showSlide();
+        }
+
+        function previous() {
+            currentSlide--;
+
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+
+            showSlide();
+        }
+    </script>
+
+</body>
+</html>

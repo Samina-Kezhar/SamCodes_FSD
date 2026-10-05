@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="submit.html" method="get">
+    <form action="submit.html" method="get" enctype="multipart/form-data">
         <fieldset>
             <legend>Information</legend>
             <label for="Username">Username</label>
@@ -65,11 +65,14 @@
             </select><br><br>
 
             <label>Feedback:</label>
-            <textarea name="msg" rows="5" cols="20">Enter mesg:</textarea><br><br>
+            <textarea name="msg" placeholder="Entername " rows="5" cols="20">Enter "esg:</textarea><br><br>
 
             <label>Satisfaction level:</label>
             <input type="range" min="0" max="50" step="2" value="25">
             <input type="hidden" name="useid" value="123"><br><br>
+
+            <label for="resume">Upload resume:</label>
+            <input type="file" name="resume" id="resume" accept=".pdf,.doc" multiple><br><br>
 
             <input type="reset" value="reset form"><br><br>
             <input type="button" value="Click me"><br><br>

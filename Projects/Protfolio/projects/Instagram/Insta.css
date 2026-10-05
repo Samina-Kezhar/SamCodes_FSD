@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    /* justify-content: center; */
+    gap: 250px;
+}
+.logo{
+    position: relative;
+    top: 51px;
+    left: 75px;
+}
+.login-image{
+    margin-left: 40px;
+}
+.center{
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.close{
+    text-align: center;
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.login{
+    margin-top: 100px;
+    position: relative;
+    top: 50px;
+}
+.p1{
+    font-size: 19px;
+    font-weight: 600;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: start;
+    /* border: 1px solid black; */
+}
+button{
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+}
+.LoginB{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+.Forgot{
+    background-color: transparent;
+    font-size: 17px;
+    color: black;
+    border :transparent;
+}
+.Facebook{
+    background-color: lightgray;
+    font-size: 15px;
+    font-weight: 500;
+}
+.account{
+    border: 2px solid rgb(0, 0, 255);
+}
+.meta{
+    text-align: center;
+}
+.end{
+    border-top: 2px black;
+}
+.right{
+    border-left: 2px  solid;
+    width: 20px;
+    height: 700px;
+    color: black;
+}
+.list1 ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    position: relative;
+    bottom: 0px;
+}
+.list2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    position: relative;
+    bottom: 0px;
+}

@@ -13,6 +13,7 @@
     font-size: 18px;
     color:whitesmoke;
    height: 55px;
+  
 }
 nav{
     background-color: black;
@@ -23,13 +24,13 @@ nav{
 .white{
     display: flex;
     justify-content: space-evenly;
-    gap:290px;
+    gap:330px;
 }    
 ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    gap: 25px;
+    gap: 50px;
     white-space: nowrap;
 position: relative;
 right: 40px;
@@ -113,8 +114,8 @@ h3{
 .circle{
     display: flex;
     position: relative;
-    left: 155px;
-    gap: 70px;
+    left: 100px;
+    gap: 75px;
     align-items: center;
     
 }
@@ -249,8 +250,8 @@ button:hover{
     color: whitesmoke;
     font-weight: 500;
     font-size: 17px;
-    position: relative;
-    left: 60px;
+    /* position: relative;
+    left: 20px; */
 }
 .Change{
     position: relative;
@@ -280,26 +281,23 @@ button:hover{
     align-items: center;
     background-color: green;
 }
-.arrow{
+body{
+    position: relative;
+}
+.arow{
     height: 40px;
     width: 40px;
-    position: sticky;
-     position: relative; 
-     top: 4135px; 
-/* top: 2000px; */
-/* translate: Y 2000px; */
-    left: -100px;
     z-index: 100;
     border-radius: 7px;
     background-color:#fff;
-}
-.arow{
     position: relative;
-    left: 10px;
+    top: 20px;
 }
-.Icon{
+.Arrow{
     position: relative;
-    top: 8px;
+    top: 4455px; 
+    left: 1300px;
+    
 }
 .check{
     position: relative;
@@ -448,6 +446,8 @@ button:hover{
         }
         .but1{
             overflow: hidden;
+            position: relative;
+            left: 9px;
         }
         .Attraction{
             position: relative;
@@ -487,6 +487,9 @@ button:hover{
         }
         .Foot2{
             flex-direction: column;
+            position: relative;
+            left: 15px;
+             gap: 0px;
         }
         .map{
             width: 460px;
@@ -507,9 +510,7 @@ button:hover{
             position: relative;
             left: -110px;
         }
-        .Foot2{
-            gap: 0px;
-        }
+        
         .blue{
             flex-direction: column;
             height: 140px;
@@ -536,17 +537,24 @@ button:hover{
             display: block;
             left: 460px;
         }
-        .arrow{
-    height: 40px;
-    width: 40px;
-    position: sticky;
-    position: relative;
-    top: 11140px;
-    left: 430px;
-    z-index: 100;
-    border-radius: 7px;
-    background-color:#fff;
+        .Arrow{
+            
+       
+            position: relative;
+            top: 10200px;
+            left: 430px;
+           
 }
+
+        .arow{
+           height: 40px;
+           width: 40px;
+           z-index: 100;
+           border-radius: 7px;
+           background-color:#fff;
+           position: relative;
+           top: 10px;}
+
      .Change{
         position: relative;
         left: 0px;

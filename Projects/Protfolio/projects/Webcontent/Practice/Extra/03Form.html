@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.html" method="get">
+        <fieldset>
+            <legend>Information</legend>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" placeholder="Enter Name" id="Name" autofocus autocomplete="on" required maxlength="20"><br><br>
+
+            <label for="password">password:</label>
+            <input type="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="email" placeholder="Enter Email" required><br><br>
+
+            <label for=" Phone"> Phone:</label>
+            <input type="tel" name="Phone" placeholder="+91 12365478"><br><br>
+
+            <label>DOB:</label>
+            <input type="date" name="dob" min="2025-09-07" max="2026-12-25"><br><br>
+
+            <label>Age:</label>
+            <input type="number" min="1" max="30" step="1" value="18"><br><br>
+
+            <label>Favourite color:</label>
+            <input type="color" value="#ff0000"><br><br>
+        
+            <label for="Gender:">Gender:</label><br>
+            <input type="radio" name="gender" value="male" checked>
+            <label>Male</label>
+             <input type="radio" name="gender" value="Female" checked>
+            <label>Female</label><br><br>
+
+            <label for="Hobbies">Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="Painting/Sketching" >
+            <label>Painting/Sketching</label>
+            <input type="checkbox" name="hobby" value="sleeping" >
+            <label>sleeping</label><br><br>
+
+
+            <label>Preferred browser:</label>
+            <input list="Browser" name="browser">
+            <datalist id="Browser">
+                <option value="chrome">
+                <option value="Firefox">
+                <option value="Edge">
+            </datalist><br><br>
+
+            <label>Select Branch:</label>
+            <select name="Branch" id="branch">
+                <option value="select" selected disabled>select branch:</option>
+                <optgroup label="computer">
+                       <option value="CE">CE</option>
+                       <option value="AIML">AIML</option>
+                </optgroup>
+                <optgroup label="Others">
+                    <option value="EC">EC</option>
+                    <option value="Mech">Mechanical</option>
+                </optgroup>
+            </select><br><br>
+
+            <label>Feedback:</label>
+            <textarea name="msg" rows="5" cols="20">Enter mesg:</textarea><br><br>
+
+            <label>Satisfaction level:</label>
+            <input type="range" min="0" max="50" step="2" value="25">
+            <input type="hidden" name="useid" value="123"><br><br>
+
+            <input type="reset" value="reset form"><br><br>
+            <input type="button" value="Click me"><br><br>
+            <button type="submit">submit form</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
