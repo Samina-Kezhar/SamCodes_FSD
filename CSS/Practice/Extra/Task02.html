@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            color: blue;
+        }
+        input[type=Password]:hover{
+            background-color: yellow;
+        }
+        input[type=text]:hover{
+            background-color: rgb(65, 215, 100);
+        }
+        label:active{
+
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write html and css script to design a signup form having fields like user name pass word choices of sports like cricket,
+     badmintion and tenis(checkbox),include gender fileds submit and reset buttons.
+     follow below requirements
+     1.while hovering user name and password its background should turn yellow and green color respectively
+     2.while clicking sports and gender fields text should turn to red color
+     3.both submit and reset button text should turn blue while hovering -->
+
+
+     <h1>Login Info</h1>
+    <hr>
+    <fieldset>
+        <form action="" method="post">
+            <label for="name">Username</label>
+            <input type="text" id="name" name="name" placeholder="Enter username">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <label for="male"><input type="radio" name="gender" id="male" value="male">
+            Male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="female">
+            Female</label>
+            <br><br>
+            <label for="sports">Sports:</label>
+            <label for="cricket"><input type="checkbox" name="sports" id="sports" value="Cricket">Cricket</label>
+           
+            <label for="tenis"><input type="checkbox" name="sports" id="sports" value="Tenis">Tenis</label>
+          
+             <label for="badmintion"><input type="checkbox" name="sports" id="sports" value="Badminton">Badminton</label>
+           
+            <br>
+            <br>
+            <button type="submit">submit</button>
+            <button type="reset">Reset</button>
+
+
+        </form>
+
+    </fieldset>
+</body>
+</html>

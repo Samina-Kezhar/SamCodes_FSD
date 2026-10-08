@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage IN JS</title>
+</head>
+<body>
+    <h1>Local Storage in JS</h1>
+    <h2 id="heading"></h2>
+
+
+    <input type="text" name="" id="inpData">
+
+    <button id="btn" class="btn btn-primary" onclick="setItem()">Set Task</button>
+    <button id="btn" class="btn btn-primary" onclick="getItem()">Get Task</button>
+
+
+
+    <!-- Custom JS  -->
+
+    <script>
+        let inpData = document.getElementById("inpData")
+        let heading = document.getElementById("heading")
+
+
+        function setItem() {
+            console.log(inpData.value);
+
+           localStorage.setItem("Data", JSON.stringify(inpData.value))
+
+            
+        }
+
+        function getItem() {
+
+
+            
+            let a = JSON.parse(localStorage.getItem("Data"))
+            heading.innerText = a
+
+
+        }
+        
+    </script>
+</body>
+</html>

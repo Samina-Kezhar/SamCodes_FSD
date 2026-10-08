@@ -97,6 +97,7 @@
 
             let todo = inpData.value
             arr.push(todo)
+            localStorage.setItem("data",JSON.stringify(todo))
             displayTodo()
 
         }

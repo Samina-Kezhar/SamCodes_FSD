@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+
+    }
+    .a{
+        position: relative;
+        /* bottom: 1000px; */
+        top: 400px;
+        left: 160px;
+        z-index: 1;
+    }
+    .b{
+        position: relative;
+        /* bottom: 1000px; */
+        top: 430px;
+        left: 1240px;
+        z-index: 1;
+    }
+    .slider img{
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+
+    }
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+    
+
+    <main>
+        <div class="b"><i class="fa-solid fa-angles-right" onclick="preslide()" style="color: rgb(204, 20, 20); "></i></div>
+        <div class="a"><i class="fa-solid fa-angles-left"  onclick="nextlide()" style="color: rgb(255, 6, 6);"></i></div>
+</main>
+    <main class="slider"> 
+        
+        <div class="slides"> <img src="./images/2086922.jpg" class="slide" width="100%"></div>
+        <div class="slides" > <img src="./images/625497.jpg" class="slide" width="100%"></div>
+        <div class="slides"> <img src="./images/8115937.jpg"  class="slide" width="100%"></div>
+
+
+    </main>
+    <script>
+        const slides=document.querySelectorAll(".slides img");
+        let slideIndex = 0;
+        let intervalId = null;
+ function showSlide(index){
+    if(index>=slides.length){
+slideIndex=0;
+
+    }
+    else if (index<0){
+        slideIndex=slides.length-1;
+
+    }
+    slides.forEach(slide=>{
+        slide.classList.remove("displaySlide");
+        
+
+    });
+        slides[slideIndex].classList.add("displaySlide");
+
+
+ }
+ function preslide(){
+    slideIndex--;
+    showSlide(slideIndex);
+
+ }
+ function nextlide(){
+    slideIndex++;
+    showSlide(slideIndex);
+    
+ }
+
+
+    </script>
+
+</body>
+</html>

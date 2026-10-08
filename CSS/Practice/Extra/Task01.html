@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: pink;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover{
+            background-color: maroon;
+            color: peru;
+        }
+        button:active{
+            background-color: beige;
+        }
+        input:focus{
+            background-color: lightgreen;
+            border: 3px solid red;
+            font-size: 18px;
+        }
+         ul li:not(.Special){
+            background-color: aqua;
+            font-style: italic;
+        }
+        ul li:nth-child(2){
+            background-color: green;
+            color: red;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- design a web page that includes a button that changes the color when hovered and when clicked
+     2. atext input field that changes its backgrounf color when it gains focus
+     3. an ul:the 2nd list item is styled differently with red text color and bold font,
+     one of the list item has class named special and all other list items have and aqua background and italic font style -->
+
+     Name:<input type="text">
+     <button>Click Me</button>
+     <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li class="Special">Item-3</li>
+        <li>Item-4</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: Logo;
+            color: pink;
+        }
+         h1::after{
+            content: Symbol;
+            color: palevioletred
+        }
+        button:hover{
+            background-color: maroon;
+            color: bisque;
+        }
+        input:focus{
+            background-color: lavenderblush;
+            border: 3px dashed rgb(138, 24, 24);
+        }
+        .box{
+            padding: 20px;
+            margin: 50px auto;
+            width: 500px;
+            border: 3px solid rgb(233, 207, 207);
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px blanchedalmond;
+
+        }
+    </style>
+</head>
+<body>
+    <!--Create a registration form containing name,email,password and submit button
+        1.change the submit button look when the mouse is hover it 
+        2.change the border and background of input field when selected
+        3.add a text logo befor the form heading
+        4.add a symbol after the form heading
+        5.wrap a form inside a div and apply proper box styling like padding,margin,border,border-radius and box-shadow-->
+
+        <div class="box">
+            <h1>Registration Form</h1>
+            <fieldset>
+                <form action="submit.html" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                    <br><br>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="Email" placeholder="Enter email">
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            color: red;
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: blue;
+            text-decoration:underline;
+        }
+        p::after{
+            content: "bye";
+            color: yellow;
+        }
+        p::before{
+            content: "before";
+            color: green;
+        }
+        ul li::marker{
+            color:plum;
+            font-size: 30px;
+        }
+        ::selection{
+            background-color: pink;
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nulla sed culpa facilis neque? Sequi vitae sunt explicabo inventore animi dolores ipsam eveniet numquam sapiente porro, dolorum totam soluta eius?</p>
+    <ul>
+        <li>ABC</li>
+        <li>PQR</li>
+        <li>XYZ</li>
+    </ul>
+</body>
+</html>
