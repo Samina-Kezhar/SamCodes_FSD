@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            display: none;
+        }
+        @media(max-width:650px){
+            .img1{
+                display: block;
+            }
+            .img2{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- write html/css code that will display an image(img1.jpg) and hides an image(img2.jpg) if viewport is max 650px wide.
+     if viewport is grater than 650px then display img2.jpg and hide img1.jpg -->
+
+     <div>
+        <img src="./Moon.jpeg" alt="moon" height="500px" width="400px" class="img1">
+        <img src="" alt="red" height="500px" width="400px" class="img2">
+     </div>
+</body>
+</html>

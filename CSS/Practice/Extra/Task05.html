@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        div:nth-child(3){
+            background-color: maroon;
+        }
+        div:hover{
+            color: bisque;
+            background-color: brown;
+            border: 5px double black;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        p::after{
+            content: '';
+        }
+        a[target=_blank]{
+            color: rebeccapurple;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create an html page displaying a list of 5 college events with each event having a heading and short-describtion.
+        write the css in separate file and apply following style
+        1.give all event heading a font size 50px,uppercase,and letter-spacing-2px
+        2.apply a different bg-color to 3rd event using pseudo class.
+        3.change the text and bg-color of an event when hovered
+        4.use an attribute selector to style all link that open in new tab
+        5.enlarge and color the 1st letter of event description and add decorative symbol after each heading -->
+
+
+        <div class="event1">
+            <h2>Technical event</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti quis porro rem, earum itaque error.
+             Voluptatibus tempora qui est aliquam ea, ab labore fugiat aut consectetur non pariatur?</p>
+             <a href="#" target="_self">Link-1</a>
+        </div>
+
+        <div class="event2">
+            <h2>cultural event</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti quis porro rem, earum itaque error.
+             Voluptatibus tempora qui est aliquam ea, ab labore fugiat aut consectetur non pariatur?</p>
+             <a href="#" target="_blank">Link-2</a>
+        </div>
+
+        <div class="event3">
+            <h2> Design gully</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti quis porro rem, earum itaque error.
+             Voluptatibus tempora qui est aliquam ea, ab labore fugiat aut consectetur non pariatur?</p>
+             <a href="#" target="_blank">Link-3</a>
+        </div>
+
+        <div class="event4">
+            <h2>LJ No Snedo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti quis porro rem, earum itaque error.
+             Voluptatibus tempora qui est aliquam ea, ab labore fugiat aut consectetur non pariatur?</p>
+             <a href="#" target="_blank">Link-4</a>
+        </div>
+
+        <div class="event5">
+            <h2>Sports event</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti quis porro rem, earum itaque error.
+             Voluptatibus tempora qui est aliquam ea, ab labore fugiat aut consectetur non pariatur?</p>
+             <a href="#" target="_blank">Link-5</a>
+        </div>
+</body>
+</html>

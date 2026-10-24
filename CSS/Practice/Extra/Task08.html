@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 200px;
+            margin: 0px auto;
+            background-image: linear-gradient(to right, blue,yellow);
+            animation-name: shape;
+            animation-duration: 2s;
+            transition: transform 10s;
+        }
+        .box:hover{
+            transform: translateY(-20px);
+        }
+        @keyframes shape{
+            from{border-radius: 0px;}
+            to{border-radius: 50px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

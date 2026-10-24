@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --b:maroon;
+            --all:solid dashed double dotted;
+            --p20:20px;
+        }
+        p{
+            --c:center;
+            --b:rgb(227, 167, 167);
+            border-style: var(--all);
+            padding: var(--p20);
+            border-color: var(--b);
+        }
+        h1{
+            color: var(--b);
+            text-align: var(--c);
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p> para 1</p>
+</body>
+</html>

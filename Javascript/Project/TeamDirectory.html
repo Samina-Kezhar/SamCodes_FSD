@@ -36,6 +36,8 @@
             width: 600px;
             height: 70px;
             background-color: whitesmoke;
+            position: relative;
+            top: 130px;
         }
         .gap:hover{
             border: 3px solid rgb(226, 107, 127);
@@ -47,9 +49,9 @@
         }
         .card{
             position: relative;
-            top: 50px;
+            top: 120px;
             width: 18rem;
-            height: 500px;
+            height: 300px;
             background-color: rgb(255, 237, 240);
         }
         .list-group-item {
@@ -64,6 +66,9 @@
 
             font-size: 29px;
         }
+       #name{
+        font-weight: bold;
+       }
         
     </style>
 </head>
@@ -72,69 +77,83 @@
     <div class="d-flex box style="height: 500px; width: 700px; ><br><br><br>
     
        <div class="card border" style="width: 18rem;">
-           <img src="IMG-20251024-WA0000.jpg" class="card-img-top" alt="...">
+           <!-- <img src="IMG-20251024-WA0000.jpg" class="card-img-top" alt="..."> -->
            
            <ul class="list-group list-group-flush">
-             <li class="list-group-item"><b>Samina Hararwala</b></li>
-             <li class="list-group-item">Full-Stack developer</li>
-             <li class="list-group-item">Ahemdabad</li>
-             <li class="list-group-item">9429560022</li>
+             <li class="list-group-item" id="name"><b>Employee name</b></li>
+             <li class="list-group-item" id="role">Role</li>
+             <li class="list-group-item" id="company">company</li>
+             <li class="list-group-item" id="contact">Contact</li>
+             <li class="list-group-item" id="city">City</li>
            </ul>
            
         </div>
         
-        <div class="border">
-            <div class="d-flex gap">
-                <p>Samina Hararwala</p>
-                <button onclick="view()">view</button>
-            </div>
-
-            <div class="d-flex gap">
-                <p>Om Badgujar</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Mihir Panchal</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Pragnya Kesur</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Hamza</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Tasneem Bilwani</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Aamena Shakir</p>
-                <button onclick="view()">view</button>
-            </div>
-            
-            <div class="d-flex gap">
-                <p>Aarnav Roy</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                <p>Het bhavsar</p>
-                <button onclick="view()">view</button>
-            </div>
-    
-            <div class="d-flex gap">
-                 <p>Sahil parmar</p>
-                <button onclick="view()">view</button>
-            </div>
+        <div class="border" id="Directory">
+           
         </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+
+        let Team=[
+            {
+                name:"Samina Hararwala",
+                role:"Full stack Developer",
+                company:"Google",
+                contact:"9429560022",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Aarnav Roy",
+                role:"AI/ML engineer",
+                company:"Brazzers",
+                contact:"987456321",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Om Badgujar",
+                role:"AI/ML engineer",
+                company:"Brazzers",
+                contact:"987456321",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Het Bhavsar",
+                role:"Web Developer",
+                company:"Dino",
+                contact:"879564231",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Sahil Parmar",
+                role:"Data Analytics",
+                company:"Infosis",
+                contact:"758964123",
+                city:"Sommnath",
+            }
+        ]
+
+        let Directory = document.getElementById("Directory")
+        Team.forEach((data,i)=>{
+            Directory.innerHTML+=
+            `
+             <div class="d-flex gap">
+                <p>${data.name}</p>
+                <button onclick="view(${i})">view</button>
+            </div>
+
+            `
+        })
+
+        const view=(i)=>{
+            let data = Team[i];
+        document.getElementById("name").innerText = data.name;
+        document.getElementById("role").innerText = data.role;
+        document.getElementById("company").innerText =data.company;
+        document.getElementById("contact").innerText = data.contact;
+        document.getElementById("city").innerText = data.city;
+        }
+    </script>
 </body>
 </html>

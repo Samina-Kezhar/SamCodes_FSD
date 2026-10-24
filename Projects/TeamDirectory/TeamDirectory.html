@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(234, 221, 223);
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        button{
+            background-color: rgb(183, 109, 134);
+            width: 70px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: beige;
+        }
+        p{
+            color:rgb(132, 96, 108);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+        }
+        .gap{
+            gap:80px;
+            border: 2px double rgb(232, 151, 178);
+            border-radius: 10px;
+            justify-content: space-between;
+            padding: 10px;
+            width: 600px;
+            height: 70px;
+            background-color: whitesmoke;
+            position: relative;
+            top: 130px;
+        }
+        .gap:hover{
+            border: 3px solid rgb(226, 107, 127);
+        }
+        .border{
+            padding: 40px;
+            position: relative;
+            bottom: 80px;
+        }
+        .card{
+            position: relative;
+            top: 120px;
+            width: 18rem;
+            height: 300px;
+            background-color: rgb(255, 237, 240);
+        }
+        .list-group-item {
+            background-color: rgb(255, 237, 240);
+            color:rgb(66, 8, 8) ;
+        }
+        .box{
+            gap: 160px;
+            padding: 20px;
+        }
+        P::first-letter{
+
+            font-size: 29px;
+        }
+       #name{
+        font-weight: bold;
+       }
+        
+    </style>
+</head>
+<body>
+    <p style="color: rgb(75, 42, 75); position: relative; top: 50px; left: 175px; ">Team Directory</p>
+    <div class="d-flex box style="height: 500px; width: 700px; ><br><br><br>
+    
+       <div class="card border" style="width: 18rem;">
+           <!-- <img src="IMG-20251024-WA0000.jpg" class="card-img-top" alt="..."> -->
+           
+           <ul class="list-group list-group-flush">
+             <li class="list-group-item" id="name"><b>Employee name</b></li>
+             <li class="list-group-item" id="role">Role</li>
+             <li class="list-group-item" id="company">company</li>
+             <li class="list-group-item" id="contact">Contact</li>
+             <li class="list-group-item" id="city">City</li>
+           </ul>
+           
+        </div>
+        
+        <div class="border" id="Directory">
+           
+        </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+
+        let Team=[
+            {
+                name:"Samina Hararwala",
+                role:"Full stack Developer",
+                company:"Google",
+                contact:"9429560022",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Aarnav Roy",
+                role:"AI/ML engineer",
+                company:"Brazzers",
+                contact:"987456321",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Om Badgujar",
+                role:"AI/ML engineer",
+                company:"Brazzers",
+                contact:"987456321",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Het Bhavsar",
+                role:"Web Developer",
+                company:"Dino",
+                contact:"879564231",
+                city:"Ahmedabad",
+            },
+            {
+                name:"Sahil Parmar",
+                role:"Data Analytics",
+                company:"Infosis",
+                contact:"758964123",
+                city:"Sommnath",
+            }
+        ]
+
+        let Directory = document.getElementById("Directory")
+        Team.forEach((data,i)=>{
+            Directory.innerHTML+=
+            `
+             <div class="d-flex gap">
+                <p>${data.name}</p>
+                <button onclick="view(${i})">view</button>
+            </div>
+
+            `
+        })
+
+        const view=(i)=>{
+            let data = Team[i];
+        document.getElementById("name").innerText = data.name;
+        document.getElementById("role").innerText = data.role;
+        document.getElementById("company").innerText =data.company;
+        document.getElementById("contact").innerText = data.contact;
+        document.getElementById("city").innerText = data.city;
+        }
+    </script>
+</body>
+</html>

@@ -49,6 +49,40 @@
             /* align-content: center; */
             /* gap: 50px; */
         }
+
+
+
+        .container{
+            display: flex;
+            /* Flex */
+            flex-direction:row;
+            /* row/row-reverse
+               column/column-reverse  */
+            justify-content: space-evenly;
+            /* flex-end
+               center
+               space-between
+               space-around 
+               space-evenly*/
+            flex-wrap: nowrap;
+            gap: 15px;
+            background-color: lightblue;
+            padding: 15px;
+        }
+        .item{
+            background-color: brown;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            width: 500px;
+        }
+        .item:nth-child(2){
+            order: -1;
+            background-color: orangered;
+            /* flex: 2 1 100px; */
+            flex-shrink: 2;
+            flex-basis: 100px;}
     </style>
 </head>
 <body>
@@ -56,6 +90,15 @@
         <div class="child-1">Child 1</div>
         <div class="child-2">Child 2</div>
         <div class="child-3">Child 3</div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="item">Item1</div>
+         <div class="item">Item2</div>
+          <div class="item">Item3</div>
     </div>
 </body>
 </html>

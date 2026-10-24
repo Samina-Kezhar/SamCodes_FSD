@@ -69,18 +69,17 @@ body{
 .left{
     position: absolute;
     top: 100px;
-    left: -70px;
-    
+    left: -75px;
     width: 150px;
-    height: 700px;
+    height: 900px;
     /* height: 600px; */
 }
 .right{
 position: absolute;
     top: 100px;
-    right: -70px;
+    right: -75px;
     width: 150px;
-    height: 700px;
+    height: 900px;
 }
 .gap{
     gap: 20px;
@@ -94,13 +93,15 @@ position: absolute;
     margin: 0 auto
 }*/
 .h1{
-            font-size: 30px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: whitesmoke;
-
+     margin: 0 auto;
+     position: relative;
     
-        }
+}
+
 h2{
     font-size: 25px;
     font-family: 'arial';
@@ -264,7 +265,6 @@ justify-content: space-between;
 }
 .text2{
 
-   
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -273,7 +273,7 @@ justify-content: space-between;
 .text1{
 
 background-color: rgb(242, 245, 250);
-width: 1500px;
+width: 1700px;
 height: 650px;
 overflow: hidden;
 color: gray;
@@ -308,7 +308,7 @@ padding-bottom: 10px;
 }
 #sec-4{
    margin:auto;
-   width: 1200px;
+   width: 1250px;
    position: relative;
    top: 100px;
 }
@@ -316,7 +316,7 @@ padding-bottom: 10px;
     height: 400px;
     width: 1200px;
     position: relative;
-    left: 50px;
+    left: 150px;
 }
 .t1{
     font-size: 20px;
@@ -372,6 +372,7 @@ hr{
     background-color: white;
     position: relative;
     top: 70px;
+    left: 90px;
 }
 
 .input1{
@@ -382,15 +383,12 @@ background-color: white;
 color: #ffffff;border: 2px solid white;
 border-radius: 20px;
 padding: 15px 45px;
-/* position: relative; */
 position: relative;
-    top: 70px;
-left: 200px;
+top: 70px;
+left: 250px
 
 }
 .input2{
-
-
 display: inline-flex;
 align-items: start;
 background-color: white;
@@ -400,8 +398,8 @@ padding: 15px 75px;
 align-items: start;
 /* position: relative*/
 position: relative;
-    top: 70px;
-left: 220px;
+top: 70px;
+left: 290px;
 }
 .dipa{
     color: grey;

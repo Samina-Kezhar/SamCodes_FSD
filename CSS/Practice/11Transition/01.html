@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: lightblue;
+            transition-property: height,width,background-color,border-radius,transform;
+            transition-duration: 3s,4s,5s,4s,3s;
+            transition-delay: 0s;
+            transition-timing-function: ease-out;
+        }
+        div:hover{
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
