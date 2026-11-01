@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wishlist | Apex Luxe</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .wishlist-page-wrap {
+      max-width: 1280px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+      flex: 1;
+      width: 100%;
+    }
+
+    .wishlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .wishlist-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all var(--transition-normal);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .wishlist-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(236, 72, 153, 0.3);
+    }
+
+    .wish-img-wrap {
+      height: 240px;
+      padding: 1.5rem;
+      background: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .wish-img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+    }
+
+    .wishlist-card:hover .wish-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .wish-remove-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      color: var(--danger);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-fast);
+    }
+
+    .wish-remove-btn:hover {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+      transform: scale(1.1);
+    }
+
+    .wish-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .wish-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      overflow: hidden;
+      min-height: 2.7rem;
+    }
+
+    .wish-card-price {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .wish-card-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./i.html" class="brand-wrapper">
+        <img src="./images/logo-removebg-preview.png" alt="Apex Luxe Logo" class="brand-logo-img">
+        <span class="brand-title">Apex<span style="color: var(--primary);">Luxe</span> <span class="badge-store">Store</span></span>
+      </a>
+
+      <nav class="nav-actions">
+        <a href="./i.html" class="nav-link-btn" title="Home">
+          <i class="fa-solid fa-house"></i>
+          <span class="d-none-sm">Home</span>
+        </a>
+
+        <a href="./wishlist.html" class="nav-link-btn active" title="Wishlist">
+          <i class="fa-solid fa-heart"></i>
+          <span class="d-none-sm">Wishlist</span>
+          <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+        </a>
+
+        <a href="./cart.html" class="nav-link-btn" title="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="d-none-sm">Cart</span>
+          <span class="nav-badge cart-badge-count" style="display: none;">0</span>
+        </a>
+
+        <a href="./profile.html" class="nav-link-btn" title="Profile">
+          <i class="fa-solid fa-user"></i>
+          <span class="d-none-sm">Profile</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Wishlist Content -->
+  <div class="wishlist-page-wrap">
+    <div class="section-header">
+      <div>
+        <h1 class="page-title"><i class="fa-solid fa-heart" style="color: var(--accent);"></i> My Wishlist</h1>
+        <p class="page-subtitle">Curate and save your favorite items for later</p>
+      </div>
+
+      <div id="wishlistCountBadge" style="font-weight: 700; color: var(--accent); background: var(--accent-light); padding: 0.4rem 1rem; border-radius: var(--radius-pill); font-size: 0.85rem;">
+        0 Items Saved
+      </div>
+    </div>
+
+    <!-- Items Grid -->
+    <div class="wishlist-grid" id="wishItems"></div>
+
+    <!-- Empty State -->
+    <div id="emptyWishlistContainer" style="display: none;">
+      <div class="empty-state">
+        <div class="empty-icon-circle" style="background: var(--accent-light); color: var(--accent); box-shadow: 0 8px 20px var(--accent-glow);">
+          <i class="fa-solid fa-heart-crack"></i>
+        </div>
+        <h3>Your Wishlist is Empty</h3>
+        <p>Save items you love by tapping the heart icon on any product card while browsing.</p>
+        <a href="./i.html" class="btn-primary-glow">
+          <i class="fa-solid fa-compass"></i> Discover Products
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>ApexLuxe Store</h4>
+        <p>Experience timeless elegance and modern craft. Delivered directly to your doorstep.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="./i.html">Home</a></li>
+          <li><a href="./cart.html">Cart</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Customer Support</h5>
+        <p style="font-size: 0.85rem;">Available Monday to Saturday, 9am - 7pm EST.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 ApexLuxe Inc. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script>
+    let wishlist = getWishlist();
+    const display = document.getElementById("wishItems");
+    const emptyContainer = document.getElementById("emptyWishlistContainer");
+    const badge = document.getElementById("wishlistCountBadge");
+
+    function showWishlist() {
+      wishlist = getWishlist();
+
+      if (wishlist.length === 0) {
+        display.innerHTML = "";
+        emptyContainer.style.display = "block";
+        badge.innerText = "0 Items Saved";
+        return;
+      }
+
+      emptyContainer.style.display = "none";
+      badge.innerText = `${wishlist.length} ${wishlist.length === 1 ? 'Item' : 'Items'} Saved`;
+
+      display.innerHTML = wishlist.map((product, i) => {
+        const price = Number(product.price) || 0;
+
+        return `
+          <div class="wishlist-card">
+            <div class="wish-img-wrap">
+              <button class="wish-remove-btn" onclick="del(${i})" title="Remove from wishlist">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <img src="${product.image}" alt="${product.title}">
+            </div>
+
+            <div class="wish-card-body">
+              <h3 class="wish-card-title">${product.title}</h3>
+              <div class="wish-card-price">$${price.toFixed(2)}</div>
+
+              <div class="wish-card-actions">
+                <button class="btn-primary-glow" style="flex: 1; padding: 0.6rem 0.9rem; font-size: 0.85rem;" onclick="settocart(${i})">
+                  <i class="fa-solid fa-cart-plus"></i> Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function del(i) {
+      const removed = wishlist.splice(i, 1);
+      saveWishlist(wishlist);
+      showToast(`Removed from wishlist`, 'danger');
+      showWishlist();
+    }
+
+    // Move to cart: add item to cart & remove from wishlist
+    function settocart(i) {
+      const item = wishlist[i];
+      if (item) {
+        addItemToCart({
+          image: item.image,
+          title: item.title,
+          price: item.price,
+          description: item.description
+        }, 1, true);
+
+        wishlist.splice(i, 1);
+        saveWishlist(wishlist);
+        showToast(`Moved <strong>${item.title.slice(0, 15)}...</strong> to Cart! 🛒`, 'primary');
+        showWishlist();
+      }
+    }
+
+    showWishlist();
+  </script>
+</body>
+</html>
